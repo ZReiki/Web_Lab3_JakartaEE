@@ -1,0 +1,285 @@
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+
+    --background: #f5f7fb;
+    --surface: #ffffff;
+
+    --text: #1f2937;
+    --text-muted: #6b7280;
+
+    --border: #e5e7eb;
+
+    --maximum: #fee2e2;
+    --minimum:#dbeafe;
+}
+
+.main-page {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 32px;
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+p {
+    margin: 20px 0;
+    color: var(--text-muted);
+}
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin: 18px 0;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input {
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-top: 9px;
+    padding: 12px 14px;
+
+    font-size: 16px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+math {
+    font-size: 20px;
+}
+mrow {
+    margin: 5px;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: var(--primary);
+
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+button {
+    width: 100%;
+
+    margin-top: 15px;
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: var(--primary);
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: var(--primary-hover);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.tabulation-table {
+    max-width: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: white;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.tabulation-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabulation-table th {
+    padding: 14px;
+
+    background: #f9fafb;
+
+    text-align: left;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.tabulation-table td {
+    padding: 14px;
+    border-top: 1px solid var(--border);
+}
+
+.tabulation-table tbody tr:hover {
+    background: #bcbcbd;
+}
+
+.maximum {
+    background: var(--maximum);
+    font-weight: bold;
+}
+
+.minimum {
+    background: var(--minimum);
+    font-weight: bold;
+}
+
+.navigation-panel {
+    max-width: 600px;
+    margin: 30px auto 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.extremum-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: white;
+    color: var(--text);
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition:
+            border-color 0.2s,
+            color 0.2s,
+            background 0.2s,
+            transform 0.2s;
+}
+
+.nav-button:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+
+    transform: translateY(-1px);
+}
+
+.maximum-button:hover {
+    background: var(--maximum);
+    color: #991b1b;
+    border-color: #fca5a5;
+}
+
+.minimum-button:hover {
+    background: var(--minimum);
+    color: #1e40af;
+    border-color: #93c5fd;
+}
+
+.arrow-up {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: var(--primary);
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: background 0.2s, transform 0.2s;
+}
+
+.arrow-up:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.print-values {
+    max-width: 600px;
+    margin: 0 auto 20px;
+
+    padding: 16px 20px;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    background: var(--surface);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.print-values p span {
+    display: inline-block;
+    min-width: 150px;
+
+    font-weight: 600;
+}
+
+.print-values p {
+    margin: 0;
+    padding: 10px 0;
+
+    font-size: 15px;
+    color: var(--text);
+}
+
+.print-values p + p {
+    border-top: 1px solid var(--border);
+}
